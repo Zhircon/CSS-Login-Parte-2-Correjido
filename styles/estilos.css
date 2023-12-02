@@ -1,0 +1,52 @@
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.header a{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 0.15rem 1rem;
+    color: white;
+    background-color: green;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+.contenedor-grid{
+    display:grid;
+    grid-template-columns: auto 45%;
+}
+.lado-izquierdo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://wwwhatsnew.com/wp-content/uploads/2018/08/Las-mejores-paginas-web-para-descargar-imagenes-sin-derecho-de-autor.jpg');
+    height: 100vh;
+    min-height: 500px;
+}
+.lado-derecho{
+    display: grid;
+    place-content: center stretch;
+}
+.contenedor-login{
+    margin: 0.15rem;
+}
+
+.h3{
+    font-size: 1.5rem;
+}
+.h5{
+    font-size: 1.25rem;
+}
+
+/*Medium*/
+@media (max-width: 768px){
+    .lado-izquierdo{
+        display: none;
+    }
+    .lado-derecho{
+        margin-top: 50px;
+        grid-column:  1 / span 2;
+    }
+}
